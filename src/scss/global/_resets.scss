@@ -1,0 +1,22 @@
+%margin-zero {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  @include reset-list;
+}
+
+p, figure {
+  @extend %margin-zero;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend %margin-zero;
+  }
+}
