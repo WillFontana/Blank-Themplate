@@ -1,3 +1,14 @@
+@mixin font($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
 @mixin media-min($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -20,6 +31,11 @@
   }
 }
 
+@mixin center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @mixin reset-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -30,13 +46,9 @@
   }
 }
 
-@mixin font($family, $size, $weight) {
-  font-family: $family;
-  font-size: $size;
-  font-weight: $weight;
-}
-
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
+@mixin icon {
+  > svg {
+    @include size(100%);
+    @include center-block;
+  }
 }

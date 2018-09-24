@@ -4,7 +4,7 @@ $grid-gutter-default: 1em !default;
 
 .grid-row {
   font-size: $grid-font-size;
-	margin: - ($grid-gutter-default / 2);
+	margin: ($grid-gutter-default / -2);
 	display: flex;
 	flex-wrap: wrap;
 

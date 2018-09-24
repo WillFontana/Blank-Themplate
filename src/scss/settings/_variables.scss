@@ -87,3 +87,16 @@ $breakpoints: (
   lg: 1024px,
   xl: 1200px
 ) !default;
+
+$icons-sizes: (
+  xs: 16px,
+  sm: 20px,
+  md: 24px,
+  lg: 32px,
+  xl: 48px
+) !default;
+
+$icons-fills: (
+  "primary": $primary-color,
+  "secondary": $secondary-color
+) !default;
