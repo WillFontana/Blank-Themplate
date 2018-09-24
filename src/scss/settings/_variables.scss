@@ -124,6 +124,23 @@ $typo-variants: (
   ),
 ) !default;
 
+$typo-colors: (
+  "dark-text-primary": $typo-color-dark-text-primary,
+  "dark-text-secondary": $typo-color-dark-text-secondary,
+  "light-text-primary": $typo-color-light-text-primary,
+  "light-text-secondary": $typo-color-light-text-secondary
+) !default;
+
+$typo-weights: (
+  thin: $fw-thin,
+  light: $fw-light,
+  regular: $fw-regular,
+  medium: $fw-medium,
+  semi: $fw-semi-bold,
+  bold: $fw-bold,
+  black: $fw-black
+) !default;
+
 $body-bg:       					    $white !default;
 $body-font-size:       			  1.6rem !default;
 

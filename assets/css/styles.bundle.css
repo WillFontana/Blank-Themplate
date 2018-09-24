@@ -478,6 +478,39 @@ body {
   font-size: 1.4rem;
   font-weight: 500; }
 
+.typo-color-dark-text-primary {
+  color: #333333; }
+
+.typo-color-dark-text-secondary {
+  color: #666666; }
+
+.typo-color-light-text-primary {
+  color: #FFF; }
+
+.typo-color-light-text-secondary {
+  color: rgba(255, 255, 255, 0.7); }
+
+.typo-fw-thin {
+  font-weight: 100; }
+
+.typo-fw-light {
+  font-weight: 300; }
+
+.typo-fw-regular {
+  font-weight: 400; }
+
+.typo-fw-medium {
+  font-weight: 500; }
+
+.typo-fw-semi {
+  font-weight: 600; }
+
+.typo-fw-bold {
+  font-weight: 700; }
+
+.typo-fw-black {
+  font-weight: 900; }
+
 .grid-row {
   font-size: 16px;
   margin: -0.5em;
