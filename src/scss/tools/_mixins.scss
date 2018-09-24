@@ -29,3 +29,14 @@
     list-style: none;
   }
 }
+
+@mixin font($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

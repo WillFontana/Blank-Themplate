@@ -1,2 +1,5 @@
-import menuIcon from '../icons/icon-menu.svg';
-import closeIcon from '../icons/icon-close.svg';
+function importIcons(r) {
+  r.keys().forEach(r);
+}
+
+importIcons(require.context('../icons/', true, /\.svg$/));

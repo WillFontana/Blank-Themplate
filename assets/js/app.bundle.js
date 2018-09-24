@@ -119,6 +119,17 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/icons sync recursive \\.svg$":
+/*!*******************************!*\
+  !*** ./src/icons sync \.svg$ ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./icon-close.svg\": \"./src/icons/icon-close.svg\",\n\t\"./icon-facebook.svg\": \"./src/icons/icon-facebook.svg\",\n\t\"./icon-menu.svg\": \"./src/icons/icon-menu.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/icons sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./src/icons_sync_\\.svg$?");
+
+/***/ }),
+
 /***/ "./src/icons/icon-close.svg":
 /*!**********************************!*\
   !*** ./src/icons/icon-close.svg ***!
@@ -128,6 +139,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svg-baker-runtime/browser-symbol */ \"./node_modules/svg-baker-runtime/browser-symbol.js\");\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svg-sprite-loader/runtime/browser-sprite.build */ \"./node_modules/svg-sprite-loader/runtime/browser-sprite.build.js\");\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar symbol = new svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default.a({\n  \"id\": \"icon-close\",\n  \"use\": \"icon-close-usage\",\n  \"viewBox\": \"0 0 24 24\",\n  \"content\": \"<symbol xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\" id=\\\"icon-close\\\"><path d=\\\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\\\" /><path d=\\\"M0 0h24v24H0z\\\" fill=\\\"none\\\" /></symbol>\"\n});\nvar result = svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);\n/* harmony default export */ __webpack_exports__[\"default\"] = (symbol);\n\n//# sourceURL=webpack:///./src/icons/icon-close.svg?");
+
+/***/ }),
+
+/***/ "./src/icons/icon-facebook.svg":
+/*!*************************************!*\
+  !*** ./src/icons/icon-facebook.svg ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svg-baker-runtime/browser-symbol */ \"./node_modules/svg-baker-runtime/browser-symbol.js\");\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svg-sprite-loader/runtime/browser-sprite.build */ \"./node_modules/svg-sprite-loader/runtime/browser-sprite.build.js\");\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar symbol = new svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default.a({\n  \"id\": \"icon-facebook\",\n  \"use\": \"icon-facebook-usage\",\n  \"viewBox\": \"0 0 24 24\",\n  \"content\": \"<symbol xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\" id=\\\"icon-facebook\\\"><path d=\\\"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z\\\" /></symbol>\"\n});\nvar result = svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);\n/* harmony default export */ __webpack_exports__[\"default\"] = (symbol);\n\n//# sourceURL=webpack:///./src/icons/icon-facebook.svg?");
 
 /***/ }),
 
@@ -147,11 +170,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _icons_icon_menu_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../icons/icon-menu.svg */ \"./src/icons/icon-menu.svg\");\n/* harmony import */ var _icons_icon_close_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../icons/icon-close.svg */ \"./src/icons/icon-close.svg\");\n\n\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("function importIcons(r) {\n  r.keys().forEach(r);\n}\n\nimportIcons(__webpack_require__(\"./src/icons sync recursive \\\\.svg$\"));\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
