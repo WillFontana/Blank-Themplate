@@ -76,6 +76,54 @@ $typo-button-font: 				    $font-base !default;
 $typo-button-font-size: 			1.4rem !default;
 $typo-button-font-weight: 		$fw-medium !default;
 
+$typo-variants: (
+  "display-2": (
+    font: $typo-display-2-font,
+    size: $typo-display-2-font-size,
+    weight: $typo-display-2-font-weight
+  ),
+  "display-1": (
+    font: $typo-display-1-font,
+    size: $typo-display-1-font-size,
+    weight: $typo-display-1-font-weight
+  ),
+  "headline": (
+    font: $typo-headline-font,
+    size: $typo-headline-font-size,
+    weight: $typo-headline-font-weight
+  ),
+  "title": (
+    font: $typo-title-font,
+    size: $typo-title-font-size,
+    weight: $typo-title-font-weight
+  ),
+  "sub-heading": (
+    font: $typo-sub-heading-font,
+    size: $typo-sub-heading-font-size,
+    weight: $typo-sub-heading-font-weight
+  ),
+  "body-2": (
+    font: $typo-body-2-font,
+    size: $typo-body-2-font-size,
+    weight: $typo-body-2-font-weight
+  ),
+  "body-1": (
+    font: $typo-body-1-font,
+    size: $typo-body-1-font-size,
+    weight: $typo-body-1-font-weight
+  ),
+  "caption": (
+    font: $typo-caption-font,
+    size: $typo-caption-font-size,
+    weight: $typo-caption-font-weight
+  ),
+  "button": (
+    font: $typo-button-font,
+    size: $typo-button-font-size,
+    weight: $typo-button-font-weight
+  ),
+) !default;
+
 $body-bg:       					    $white !default;
 $body-font-size:       			  1.6rem !default;
 
