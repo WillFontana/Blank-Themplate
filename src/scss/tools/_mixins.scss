@@ -31,6 +31,24 @@
   }
 }
 
+@mixin transition($transition...) {
+  @if length($transition) == 0 {
+    transition: $transition-base;
+  } @else {
+    transition: $transition;
+  }
+}
+
+@mixin radius($radius...) {
+  @if $enable-rounded {
+    @if length($radius) == 0 {
+      border-radius: $border-radius-base;
+    } @else {
+      border-radius: $radius;
+    }
+  }
+}
+
 @mixin center-block {
   margin-left: auto;
   margin-right: auto;

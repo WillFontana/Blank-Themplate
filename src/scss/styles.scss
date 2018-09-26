@@ -10,11 +10,15 @@
 @import "./global/scaffolding";
 
 // components
-@import "./components/typography";
 @import "./components/grid";
+@import "./components/content-all";
+@import "./components/container-block";
+@import "./components/typography";
 @import "./components/svg-icon";
 @import "./components/image-fluid";
 @import "./components/divider-line";
+@import "./components/text-field";
+@import "./components/alert-box";
 
 // helpers
 @import "./helpers/utilities";

@@ -1,0 +1,13 @@
+.alert-box {
+  @include font($alert-box-font, $alert-box-font-size, $alert-box-font-weight);
+  @include radius;
+  padding: $alert-box-padding;
+  line-height: $alert-box-line-height;
+
+  @each $class, $color in $alert-box-variants {
+    &.-#{$class} {
+      background-color: $color;
+      color: $white;
+    }
+  }
+}

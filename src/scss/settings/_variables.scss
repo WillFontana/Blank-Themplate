@@ -146,12 +146,13 @@ $body-font-size:       			  1.6rem !default;
 
 $enable-rounded:              true !default;
 
-$gutter-xs:                   5px !default;
-$gutter-sm:                   10px !default;
-$gutter-md:                   16px !default;
-$gutter-lg:                   20px !default;
-$gutter-xl:                   32px !default;
-$gutter-ui:                   100px !default;
+$border-width:                2px !default;
+
+$border-radius-sm:            2px;
+$border-radius-md:            4px;
+$border-radius-lg:            10px;
+$border-radius-xl:            30px;
+$border-radius-base:          $border-radius-md;
 
 $breakpoints: (
   sm: 576px,
@@ -159,6 +160,16 @@ $breakpoints: (
   lg: 1024px,
   xl: 1200px
 ) !default;
+
+$gutter-xs:                   5px !default;
+$gutter-sm:                   10px !default;
+$gutter-md:                   16px !default;
+$gutter-lg:                   20px !default;
+$gutter-xl:                   32px !default;
+$gutter-ui:                   100px !default;
+
+$content-all-width:           map-get($breakpoints, xl) !default;
+$content-all-pad-x:           $gutter-md !default;
 
 $icons-sizes: (
   xs: 16px,
@@ -186,3 +197,29 @@ $spacing: (
 ) !default;
 
 $spacing-sides: (top, right, bottom, left) !default;
+
+$transition-base:             all .2s ease-in-out !default;
+
+$text-field-bg:               white !default;
+$text-field-height:           40px !default;
+$text-field-border-width:     $border-width !default;
+$text-field-border-color:     #ccc !default;
+$text-field-padding-x:        $gutter-sm !default;
+$text-field-font-size:        $typo-body-2-font-size !default;
+$text-field-font:             $typo-body-2-font !default;
+$text-field-font-weight:      $typo-body-2-font-weight !default;
+$text-field-font-color:       $typo-color-dark-text-primary !default;
+
+$text-field-focus-border-color: $primary-color !default;
+
+$alert-box-padding:           $gutter-md !default;
+$alert-box-font:              $typo-body-2-font !default;
+$alert-box-font-size:         $typo-body-2-font-size !default;
+$alert-box-font-weight:       $typo-body-2-font-weight !default;
+$alert-box-line-height:       1.4 !default;
+$alert-box-variants: (
+  success: $brand-success,
+  error: $brand-danger,
+  info: $brand-info,
+  warning: $brand-warning
+);
