@@ -234,3 +234,7 @@ $button-base-out-b-width:     $border-width !default;
 $button-base-out-b-color:     $primary-color !default;
 $button-base-out-color:       $primary-color !default;
 $button-base-out-bg:          transparent !default;
+
+$input-switch-size:           map-get($icons-sizes, md) !default;
+$input-switch-fill:           $black-20 !default;
+$input-switch-checked-fill:   $primary-color !default;

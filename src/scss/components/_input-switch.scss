@@ -1,0 +1,36 @@
+.input-switch {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none;
+
+  > input {
+    display: none;
+  }
+
+  > .box {
+    @include size($input-switch-size);
+    @include icon;
+    position: relative;
+  }
+
+  > .box > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  > input:not(:checked) + .box > .solid,
+  > input:checked + .box > .outline {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  > input:not(:checked) + .box > svg {
+    fill: $input-switch-fill;
+  }
+
+  > input:checked + .box > svg {
+    fill: $input-switch-checked-fill;
+  }
+}
