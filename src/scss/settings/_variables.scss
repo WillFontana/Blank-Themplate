@@ -146,6 +146,13 @@ $body-font-size:       			  1.6rem !default;
 
 $enable-rounded:              true !default;
 
+$gutter-xs:                   5px !default;
+$gutter-sm:                   10px !default;
+$gutter-md:                   16px !default;
+$gutter-lg:                   20px !default;
+$gutter-xl:                   32px !default;
+$gutter-ui:                   100px !default;
+
 $breakpoints: (
   sm: 576px,
   md: 768px,
@@ -168,3 +175,14 @@ $icons-fills: (
 
 $divider-line-width: 		      1px !default;
 $divider-line-bg: 		        #EEE !default;
+
+$spacing: (
+  xs: $gutter-xs,
+  sm: $gutter-sm,
+  md: $gutter-md,
+  lg: $gutter-lg,
+  xl: $gutter-xl,
+  ui: $gutter-ui
+) !default;
+
+$spacing-sides: (top, right, bottom, left) !default;
