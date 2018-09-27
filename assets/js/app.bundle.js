@@ -126,7 +126,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./icon-check-outline.svg\": \"./src/icons/icon-check-outline.svg\",\n\t\"./icon-check-solid.svg\": \"./src/icons/icon-check-solid.svg\",\n\t\"./icon-close.svg\": \"./src/icons/icon-close.svg\",\n\t\"./icon-facebook.svg\": \"./src/icons/icon-facebook.svg\",\n\t\"./icon-menu.svg\": \"./src/icons/icon-menu.svg\",\n\t\"./icon-radio-outline.svg\": \"./src/icons/icon-radio-outline.svg\",\n\t\"./icon-radio-solid.svg\": \"./src/icons/icon-radio-solid.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/icons sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./src/icons_sync_\\.svg$?");
+eval("var map = {\n\t\"./icon-check-outline.svg\": \"./src/icons/icon-check-outline.svg\",\n\t\"./icon-check-solid.svg\": \"./src/icons/icon-check-solid.svg\",\n\t\"./icon-close.svg\": \"./src/icons/icon-close.svg\",\n\t\"./icon-facebook.svg\": \"./src/icons/icon-facebook.svg\",\n\t\"./icon-instagram.svg\": \"./src/icons/icon-instagram.svg\",\n\t\"./icon-menu.svg\": \"./src/icons/icon-menu.svg\",\n\t\"./icon-radio-outline.svg\": \"./src/icons/icon-radio-outline.svg\",\n\t\"./icon-radio-solid.svg\": \"./src/icons/icon-radio-solid.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/icons sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack:///./src/icons_sync_\\.svg$?");
 
 /***/ }),
 
@@ -178,6 +178,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_
 
 /***/ }),
 
+/***/ "./src/icons/icon-instagram.svg":
+/*!**************************************!*\
+  !*** ./src/icons/icon-instagram.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svg-baker-runtime/browser-symbol */ \"./node_modules/svg-baker-runtime/browser-symbol.js\");\n/* harmony import */ var svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svg-sprite-loader/runtime/browser-sprite.build */ \"./node_modules/svg-sprite-loader/runtime/browser-sprite.build.js\");\n/* harmony import */ var svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar symbol = new svg_baker_runtime_browser_symbol__WEBPACK_IMPORTED_MODULE_0___default.a({\n  \"id\": \"icon-instagram\",\n  \"use\": \"icon-instagram-usage\",\n  \"viewBox\": \"0 0 24 24\",\n  \"content\": \"<symbol xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\" id=\\\"icon-instagram\\\"><path d=\\\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\\\" /></symbol>\"\n});\nvar result = svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);\n/* harmony default export */ __webpack_exports__[\"default\"] = (symbol);\n\n//# sourceURL=webpack:///./src/icons/icon-instagram.svg?");
+
+/***/ }),
+
 /***/ "./src/icons/icon-menu.svg":
 /*!*********************************!*\
   !*** ./src/icons/icon-menu.svg ***!
@@ -221,7 +233,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var svg_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("function importIcons(r) {\n  r.keys().forEach(r);\n}\n\nimportIcons(__webpack_require__(\"./src/icons sync recursive \\\\.svg$\"));\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance\"); }\n\nfunction _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }\n\n// import all icons\nfunction importIcons(r) {\n  r.keys().forEach(r);\n}\n\nimportIcons(__webpack_require__(\"./src/icons sync recursive \\\\.svg$\")); // sprite map\n\nvar displayIcons = document.getElementById('sprite-map');\nvar symbols = document.querySelectorAll('svg > symbol');\nvar icons = [];\nsymbols.forEach(function (item) {\n  return icons = _toConsumableArray(icons).concat([item.getAttribute('id')]);\n});\nif (displayIcons) displayIcons.innerHTML = icons.map(marckupIcon).join('\\n');\n\nfunction marckupIcon(id) {\n  return \"\\n    <div class=\\\"col-3 col-sm-1 _px-sm _py-sm\\\">\\n      <div class=\\\"icon-sprite\\\">\\n        <div class=\\\"content svg-icon _px-sm _py-sm\\\">\\n          <svg><use xlink:href=\\\"#\".concat(id, \"\\\" /></svg>\\n        </div>\\n      </div>\\n      <span class=\\\"heading typo-body-2 typo-color-dark-text-secondary _mt-sm _d-block _text-center _text-truncate\\\">\").concat(id.replace('icon-', ''), \"</span>\\n    </div>\\n  \");\n}\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 

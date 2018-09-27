@@ -1,6 +1,12 @@
 $grid-font-size: 16px !default;
 $grid-columns: 12 !default;
 $grid-gutter-default: 1em !default;
+$gutters-grid: (
+  zero: 0px,
+  md: $gutter-md,
+  lg: $gutter-lg,
+  xl: $gutter-xl
+) !default;
 
 .grid-row {
   font-size: $grid-font-size;
@@ -42,6 +48,12 @@ $grid-gutter-default: 1em !default;
           max-width: calc((100% / #{$grid-columns} * #{$i}) - #{$grid-gutter-default});
         }
       }
+    }
+  }
+
+  @each $class, $gutter in $gutters-grid {
+    &.-gutter-#{$class} {
+      font-size: $gutter;
     }
   }
 }
