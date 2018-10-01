@@ -14,6 +14,14 @@
     position: relative;
   }
 
+  > .box:before {
+    content: "";
+		background-color: rgba($primary-color, .5);
+		border-radius: 50%;
+		will-change: transform, opacity;
+		@include absolute-all;
+  }
+
   > .box > svg {
     position: absolute;
     top: 0;
@@ -21,7 +29,8 @@
   }
 
   > input:not(:checked) + .box > .solid,
-  > input:checked + .box > .outline {
+  > input:checked + .box > .outline,
+  > input:not(:checked) + .box:before {
     visibility: hidden;
     opacity: 0;
   }
@@ -33,4 +42,20 @@
   > input:checked + .box > svg {
     fill: $input-switch-checked-fill;
   }
+
+  > input:checked + .box:before {
+		animation: rippleSwitch 500ms cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+	}
+}
+
+@keyframes rippleSwitch {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
 }
