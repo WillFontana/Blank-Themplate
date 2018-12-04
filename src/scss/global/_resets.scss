@@ -10,7 +10,7 @@ ul {
   @include reset-list;
 }
 
-p, figure {
+p, figure, hr {
   @extend %margin-zero;
 }
 
