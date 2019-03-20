@@ -1,5 +1,5 @@
 .alert-box {
-  @include font($alert-box-font, $alert-box-font-size, $alert-box-font-weight);
+  @include font($alert-box-font, $alert-box-font-size, $alert-box-font-size-resp, $alert-box-font-weight);
   @include radius;
   padding: $alert-box-padding;
   line-height: $alert-box-line-height;

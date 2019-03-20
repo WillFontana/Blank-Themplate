@@ -1,6 +1,6 @@
 .text-field {
   @include size(100%, $text-field-height);
-  @include font($text-field-font, $text-field-font-size, $text-field-font-weight);
+  @include font($text-field-font, $text-field-font-size, $text-field-font-size-resp, $text-field-font-weight);
   @include radius;
   padding-right: $text-field-padding-x;
   padding-left: $text-field-padding-x;

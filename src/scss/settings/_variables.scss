@@ -41,85 +41,103 @@ $typo-color-light-text-primary: $white !default;
 $typo-color-light-text-secondary: rgba($white, .7) !default;
 
 $typo-display-2-font: 				$font-base !default;
-$typo-display-2-font-size: 	  4.5rem !default;
+$typo-display-2-font-size: 	  46px !default;
+$typo-display-2-font-size-resp: 34px !default;
 $typo-display-2-font-weight:  $fw-regular !default;
 
 $typo-display-1-font: 				$font-base !default;
-$typo-display-1-font-size: 		3.4rem !default;
+$typo-display-1-font-size: 		34px !default;
+$typo-display-1-font-size-resp: 28px !default;
 $typo-display-1-font-weight: 	$fw-regular !default;
 
 $typo-headline-font: 				  $font-base !default;
-$typo-headline-font-size: 		2.4rem !default;
+$typo-headline-font-size: 		24px !default;
+$typo-headline-font-size-resp: 20px !default;
 $typo-headline-font-weight: 	$fw-regular !default;
 
 $typo-sub-heading-font: 			$font-base !default;
-$typo-sub-heading-font-size: 	1.6rem !default;
+$typo-sub-heading-font-size: 	16px !default;
+$typo-sub-heading-font-size-resp: $typo-sub-heading-font-size !default;
 $typo-sub-heading-font-weight: $fw-regular !default;
 
 $typo-title-font: 					  $font-base !default;
-$typo-title-font-size: 			  2rem !default;
+$typo-title-font-size: 			  20px !default;
+$typo-title-font-size-resp:   18px !default;
 $typo-title-font-weight: 			$fw-medium !default;
 
 $typo-body-2-font: 				    $font-base !default;
-$typo-body-2-font-size: 			1.4rem !default;
+$typo-body-2-font-size: 			14px !default;
+$typo-body-2-font-size-resp: 	$typo-body-2-font-size !default;
 $typo-body-2-font-weight: 		$fw-regular !default;
 
 $typo-body-1-font: 				    $font-base !default;
-$typo-body-1-font-size: 			1.2rem !default;
+$typo-body-1-font-size: 			12px !default;
+$typo-body-1-font-size-resp: 	$typo-body-1-font-size !default;
 $typo-body-1-font-weight: 		$fw-regular !default;
 
 $typo-caption-font: 				  $font-base !default;
-$typo-caption-font-size: 			1.1rem !default;
+$typo-caption-font-size: 			11px !default;
+$typo-caption-font-size-resp: $typo-caption-font-size !default;
 $typo-caption-font-weight: 		$fw-regular !default;
 
 $typo-button-font: 				    $font-base !default;
-$typo-button-font-size: 			1.4rem !default;
+$typo-button-font-size: 			14px !default;
+$typo-button-font-size-resp: 	$typo-button-font-size !default;
 $typo-button-font-weight: 		$fw-medium !default;
 
 $typo-variants: (
   "display-2": (
     font: $typo-display-2-font,
     size: $typo-display-2-font-size,
+    size-resp: $typo-display-2-font-size-resp,
     weight: $typo-display-2-font-weight
   ),
   "display-1": (
     font: $typo-display-1-font,
     size: $typo-display-1-font-size,
+    size-resp: $typo-display-1-font-size-resp,
     weight: $typo-display-1-font-weight
   ),
   "headline": (
     font: $typo-headline-font,
     size: $typo-headline-font-size,
+    size-resp: $typo-headline-font-size-resp,
     weight: $typo-headline-font-weight
   ),
   "title": (
     font: $typo-title-font,
     size: $typo-title-font-size,
+    size-resp: $typo-title-font-size-resp,
     weight: $typo-title-font-weight
   ),
   "sub-heading": (
     font: $typo-sub-heading-font,
     size: $typo-sub-heading-font-size,
+    size-resp: $typo-title-font-size-resp,
     weight: $typo-sub-heading-font-weight
   ),
   "body-2": (
     font: $typo-body-2-font,
     size: $typo-body-2-font-size,
+    size-resp: $typo-body-2-font-size-resp,
     weight: $typo-body-2-font-weight
   ),
   "body-1": (
     font: $typo-body-1-font,
     size: $typo-body-1-font-size,
+    size-resp: $typo-body-1-font-size-resp,
     weight: $typo-body-1-font-weight
   ),
   "caption": (
     font: $typo-caption-font,
     size: $typo-caption-font-size,
+    size-resp: $typo-caption-font-size-resp,
     weight: $typo-caption-font-weight
   ),
   "button": (
     font: $typo-button-font,
     size: $typo-button-font-size,
+    size-resp: $typo-button-font-size-resp,
     weight: $typo-button-font-weight
   ),
 ) !default;
@@ -206,6 +224,7 @@ $text-field-border-width:     $border-width !default;
 $text-field-border-color:     #ccc !default;
 $text-field-padding-x:        $gutter-sm !default;
 $text-field-font-size:        $typo-body-2-font-size !default;
+$text-field-font-size-resp:   $typo-body-2-font-size-resp !default;
 $text-field-font:             $typo-body-2-font !default;
 $text-field-font-weight:      $typo-body-2-font-weight !default;
 $text-field-font-color:       $typo-color-dark-text-primary !default;
@@ -215,6 +234,7 @@ $text-field-focus-border-color: $primary-color !default;
 $alert-box-padding:           $gutter-md !default;
 $alert-box-font:              $typo-body-2-font !default;
 $alert-box-font-size:         $typo-body-2-font-size !default;
+$alert-box-font-size-resp:    $typo-body-2-font-size-resp !default;
 $alert-box-font-weight:       $typo-body-2-font-weight !default;
 $alert-box-line-height:       1.4 !default;
 $alert-box-variants: (

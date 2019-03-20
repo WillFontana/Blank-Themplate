@@ -1,6 +1,6 @@
 @each $class, $obj in $typo-variants {
   .typo-#{$class} {
-    @include font(map-get($obj, 'font'), map-get($obj, 'size'), map-get($obj, 'weight'));
+    @include font(map-get($obj, 'font'), map-get($obj, 'size'), map-get($obj, 'size-resp'), map-get($obj, 'weight'));
   }
 }
 
