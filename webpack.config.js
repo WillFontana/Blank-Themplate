@@ -30,9 +30,7 @@ module.exports = {
           options: {
             plugins: () => [
               flexBugs(),
-              autoprefixer({
-                browsers: ['last 2 versions']
-              }),
+              autoprefixer(),
               cssnano(),
               mqpacker({ sort: true }),
             ]
@@ -41,7 +39,9 @@ module.exports = {
         {
           loader: 'sass-loader',
           options: {
-            includePaths: ['./node_modules']
+            sassOptions: {
+              includePaths: ['./node_modules']
+            }
           }
         },
       ]
