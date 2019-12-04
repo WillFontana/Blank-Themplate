@@ -130,3 +130,51 @@
   bottom: 0;
   left: 0;
 }
+
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 18px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    background-clip: padding-box;
+    border-radius: 20px;
+    background-color: $primary-color;
+    box-shadow: inset -1px -1px 0px #0000000d, inset 1px 1px 0px #0000000d;
+    -webkit-box-shadow: inset -1px -1px 0px #0000000d, inset 1px 1px 0px #0000000d;
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+@mixin invisible-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    background-clip: padding-box;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: inset -1px -1px 0px transparent, inset 1px 1px 0px transparent;
+    -webkit-box-shadow: inset -1px -1px 0px transparent, inset 1px 1px 0px transparent;
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
