@@ -149,6 +149,15 @@ $typo-colors: (
   "light-text-secondary": $typo-color-light-text-secondary
 ) !default;
 
+$typo-face: (
+  "formal": $font-base,
+  "informal": $font-face,
+) !default;
+
+$typo-styles: (
+  "italic": $fsty-italic,
+) !default;
+
 $typo-weights: (
   thin: $fw-thin,
   light: $fw-light,
