@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Protótipo - Aula PHP</title>
+  <link rel="stylesheet" href="assets/css/styles.bundle.css">
+</head>
+
+<body>
+  <div class="login-floor">
+    <div class="login-container">
+      <div class="form-headline">
+        <div class="headline-illustration" id="loginHeadlineIllustration">
+          <i class="svg-icon">
+            <svg>
+              <use xlink:href="#login-animate1"></use>
+            </svg>
+          </i>
+        </div>
+        <div class="headline-title _text-center">
+          <p class="typo-title typo-color-dark-text-primary typo-fw-bold" id="loginHeadlinePresentation">
+            Por favor, insira os dados abaixo para acessar a plataforma
+          </p>
+        </div>
+      </div>
+      <form action="" method="post" class="login-form" id="loginForm">
+        <div class="text-box" id="txAcessoContainer">
+          <input type="text" class="input" oninput="applyUsed('txAcesso')" id="txAcesso" name="txAcesso">
+          <label for="txAcesso" class="label">
+            <p class="text" id="labelAcess">
+              Nome ou Email de login
+            </p>
+          </label>
+        </div>
+        <div class="text-box -hidden" id="txCriarAcessoContainer">
+          <input type="email" class="input" oninput="applyUsed('txCriarAcesso')" id="txCriarAcesso" name="txCriarAcesso">
+          <label for="txAcesso" class="label">
+            <p class="text">
+              Email
+            </p>
+          </label>
+        </div>
+        <div class="text-box" id="txPasswordContainer">
+          <input type="password" class="input" oninput="applyUsed('txPassword')" id="txPassword" name="txPassword">
+          <label for="txAcesso" class="label">
+            <p class="text">
+              Senha de acesso
+            </p>
+          </label>
+        </div>
+        <div class="text-box  -hidden" id="txConfirmarPasswordContainer">
+          <input type="password" class="input" oninput="applyUsed('txConfirmPassword')" id="txConfirmPassword" name="txConfirmPassword">
+          <label for="txAcesso" class="label">
+            <p class="text">
+              Senha de acesso
+            </p>
+          </label>
+        </div>
+        <div class="button-select">
+          <div class="main-button -success" id="loginButton" onclick="validaFormLogar()">
+            <p class="text">
+              Entrar
+            </p>
+          </div>
+          <div class="main-button -new" id="createCadastroButton" onclick="criarCadastro()">
+            <p class="text">
+              Criar conta
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/app.bundle.js" async></script>
+  <script src="assets/js/vars.js" async></script>
+  <script src="assets/js/functions.js" async></script>
+  <script src="assets/js/main.js" async></script>
+  <script>
+    setInterval(() => {
+      animateLogin();
+    }, 3000);
+  </script>
+</body>
+
+</html>

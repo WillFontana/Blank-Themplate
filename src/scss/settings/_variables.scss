@@ -1,4 +1,5 @@
 $white:                       #FFF !default;
+$ease-white:                  #f8f8f8 !default;
 $black:                       #000 !default;
 $black-10:            				darken($white, 10%) !default; // #e6e6e6
 $black-20:                 		darken($white, 20%) !default; // #cccccc
@@ -10,21 +11,23 @@ $black-70:                 		darken($white, 70%) !default; // #4d4d4d
 $black-80:                 		darken($white, 80%) !default; // #333333
 $black-90:                 		darken($white, 90%) !default; // #191919
 
-$brand-primary:             	#0275d8 !default;
-$brand-success:             	#5cb860 !default;
-$brand-info:                	#3273dc !default;
-$brand-warning:             	#ffdd57 !default;
-$brand-danger:             	  #f55a4e !default;
+$brand-primary:             	#5d9cec !default;
+$brand-success:             	#2ecd70 !default;
+$brand-info:                	#5d9cec !default;
+$brand-warning:             	#ffd83e !default;
+$brand-danger:             	  #ed5564 !default;
 
-$primary-color:      				  #2196f3 !default;
+$primary-color:      				  #5d9cec !default;
 $primary-color-darken:     		darken($primary-color, 10%) !default;
 $primary-color-lighten:     	lighten($primary-color, 10%) !default;
 $primary-color-contrast:      $white !default;
-$secondary-color:					    #f50057 !default;
+$secondary-color:					    #002748 !default;
+$secondary-color-darken:     		darken($secondary-color, 10%) !default;
+$secondary-color-lighten:     	lighten($secondary-color, 10%) !default;
 $secondary-color-contrat:			$white !default;
 
 $line-height-base:            1.5 !default;
-$font-base:  				          Arial, Helvetica, sans-serif !default;
+$font-base:  				          "Roboto", sans-serif !default;
 $font-face:  				          Arial, Helvetica, sans-serif !default;
 $font-size-root:          		10px !default;
 $fw-thin: 							      100 !default;
@@ -169,6 +172,15 @@ $typo-weights: (
   bold: $fw-bold,
   black: $fw-black
 ) !default;
+
+
+$typo-situations: (
+  error: $brand-danger,
+  success: $brand-success,
+  warning: $brand-warning,
+  info: $brand-info,
+  new: $brand-primary
+);
 
 $body-bg:       					    $white !default;
 $body-font-size:       			  1.6rem !default;
