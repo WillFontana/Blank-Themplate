@@ -121,48 +121,19 @@
 
 @mixin absolute-center {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@mixin absolute-center-y {
+@mixin absolute-all {
   position: absolute;
   top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-@mixin absolute-center-x {
-  position: absolute;
-  left: 0;
   right: 0;
-  margin: auto;
+  bottom: 0;
+  left: 0;
 }
 
-@mixin center-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin center-flex-y {
-  display: flex;
-  align-items: center;
-}
-
-@mixin center-flex-x {
-  display: flex;
-  justify-content: center;
-}
-
-@mixin between-flex-y {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 @mixin customScroll($size, $radius, $scrollbar-color, $background-color) {
   &::-webkit-scrollbar {

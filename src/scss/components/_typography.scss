@@ -18,12 +18,12 @@
 
 @each $class, $face in $typo-face {
   .typo-#{$class} {
-    font-family: $face;
+    font-weight: $face;
   }
 }
 
 @each $class, $styles in $typo-styles {
   .typo-#{$styles} {
-    font-style: $styles;
+    font-weight: $styles;
   }
 }

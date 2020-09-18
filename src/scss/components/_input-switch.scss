@@ -19,7 +19,7 @@
 		background-color: rgba($primary-color, .5);
 		border-radius: 50%;
 		will-change: transform, opacity;
-		@include absolute-center;
+		@include absolute-all;
   }
 
   > .box > svg {

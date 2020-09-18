@@ -1,86 +1,19 @@
-.text-box {
-  @include size(100%, 35px);
-  @include transition(0.3s);
-  position: relative;
-  &:not(.-textarea) {
-    max-height: 35px;
+.text-field {
+  @include size(100%, $text-field-height);
+  @include font($text-field-font, $text-field-font-size, $text-field-font-size-resp, $text-field-font-weight);
+  @include radius;
+  padding-right: $text-field-padding-x;
+  padding-left: $text-field-padding-x;
+	background-color: $text-field-bg;
+	border: $text-field-border-width solid $text-field-border-color;
+  color: $text-field-font-color;
+  outline: none;
+
+  &:focus {
+    border-color: $text-field-focus-border-color;
   }
-  .input {
-    @include size(100%, 35px);
-    @include radius;
-    border: none;
-    padding: 0 12px;
-    outline: none;
-    font-size: 16px;
-    color: $black-70;
-    background-color: transparent;
-    box-shadow: inset 0 0 6px 0 $black-20;
-    font-family: $font-base;
-    z-index: 2;
-    position: relative;
-    &:focus,
-    &.-used,
-    &.-force-used,
-    &.-error,
-    &.-validate {
-      + .label {
-        top: -10px;
-        bottom: 100%;
-        left: 0px !important;
-        padding: 0;
-        z-index: 1;
-        .text {
-          font-size: 11px;
-        }
-      }
-    }
-    &:focus {
-      box-shadow: inset 0 0 5px 0 $black-10;
-    }
-    &.-used {
-      box-shadow: inset 0 0 6px 0 $black-10;
-    }
-    @each $situation, $color in $typo-situations {
-      &.-#{$situation} {
-        box-shadow: inset 0 0 5px 0 $color;
-        + .label {
-          .text {
-            color: $color;
-          }
-        }
-      }
-    }
-    &.-textarea {
-      @include customScroll(1px, 0px, $primary-color, $ease-white);
-      min-height: 70px;
-      padding: 11.5px 12px;
-    }
-  }
-  .label {
-    @include size(auto, 2px);
-    @include transition;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 13px;
-    text-align: center;
-    top: calc(35px / 2);
-    z-index: 0;
-    .text {
-      @include transition;
-      font-size: 14px;
-      color: $black-70;
-      font-family: $font-base;
-    }
-  }
-  &.-hidden {
-    max-height: 0;
-    opacity: 0;
-    pointer-events: none;
-    opacity: 0;
-    margin: 0!important;
-  }
-  &.-textarea {
-    height: auto;
+
+  &.-error {
+    border-color: $brand-danger;
   }
 }
