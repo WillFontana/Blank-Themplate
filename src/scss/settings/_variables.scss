@@ -1,4 +1,6 @@
+// Escalas de preto e branco
 $white:                       #FFF !default;
+$ease-white:                  #F2F2F2 !default;
 $black:                       #000 !default;
 $black-10:            				darken($white, 10%) !default; // #e6e6e6
 $black-20:                 		darken($white, 20%) !default; // #cccccc
@@ -10,22 +12,41 @@ $black-70:                 		darken($white, 70%) !default; // #4d4d4d
 $black-80:                 		darken($white, 80%) !default; // #333333
 $black-90:                 		darken($white, 90%) !default; // #191919
 
-$brand-primary:             	#0275d8 !default;
-$brand-success:             	#5cb860 !default;
-$brand-info:                	#3273dc !default;
-$brand-warning:             	#ffdd57 !default;
-$brand-danger:             	  #f55a4e !default;
+// Cores do sistema
+$brand-success:             	#4FD1A7 !default;
+$brand-info:                	#4B89DC !default;
+$brand-warning:             	#ECBE06 !default;
+$brand-danger:             	  #ED5564 !default;
+$brand-alert:             	  #FB6E52 !default;
 
-$primary-color:      				  #2196f3 !default;
+// Cor primária
+$primary-color:      				  #20755D !default;
 $primary-color-darken:     		darken($primary-color, 10%) !default;
 $primary-color-lighten:     	lighten($primary-color, 10%) !default;
 $primary-color-contrast:      $white !default;
-$secondary-color:					    #f50057 !default;
+
+// Cor secundária
+$secondary-color:					    #FE6C23 !default;
+$secondary-color-darken:			lighten($secondary-color, 10%) !default;
+$secondary-color-lighten:			lighten($secondary-color, 10%) !default;
 $secondary-color-contrat:			$white !default;
 
+// Variáveis de status
+$status-colors: (
+  "default": $black-60,
+  "info": $brand-info,
+  "success": $brand-success,
+  "error": $brand-danger,
+  "warning": $brand-warning,
+  "danger": $brand-alert,
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+);
+
+// Definições de fontes
 $line-height-base:            1.5 !default;
-$font-base:  				          Arial, Helvetica, sans-serif !default;
-$font-face:  				          Arial, Helvetica, sans-serif !default;
+$font-base:  				          'Roboto', sans-serif !default;
+$font-face:  				          'Open Sans', sans-serif !default;
 $font-size-root:          		10px !default;
 $fw-thin: 							      100 !default;
 $fw-light: 						        300 !default;
@@ -36,12 +57,14 @@ $fw-bold: 							      700 !default;
 $fw-black: 							      900 !default;
 $fsty-italic:                 italic !default;
 
-$typo-color-dark-text-primary: $black-80 !default;
+// Definições de cores extras
+$typo-color-dark-text-primary: $black !default;
 $typo-color-dark-text-secondary: $black-60 !default;
 
 $typo-color-light-text-primary: $white !default;
 $typo-color-light-text-secondary: rgba($white, .7) !default;
 
+// Criação dos typos
 $typo-display-2-font: 				$font-base !default;
 $typo-display-2-font-size: 	  48px !default;
 $typo-display-2-font-size-resp: 34px !default;
@@ -57,17 +80,17 @@ $typo-headline-font-size: 		24px !default;
 $typo-headline-font-size-resp: 20px !default;
 $typo-headline-font-weight: 	$fw-regular !default;
 
-$typo-sub-heading-font: 			$font-base !default;
-$typo-sub-heading-font-size: 	16px !default;
-$typo-sub-heading-font-size-resp: $typo-sub-heading-font-size !default;
-$typo-sub-heading-font-weight: $fw-regular !default;
-
 $typo-title-font: 					  $font-base !default;
 $typo-title-font-size: 			  20px !default;
 $typo-title-font-size-resp:   18px !default;
 $typo-title-font-weight: 			$fw-medium !default;
 
-$typo-body-2-font: 				    $font-base !default;
+$typo-sub-heading-font: 			$font-base !default;
+$typo-sub-heading-font-size: 	16px !default;
+$typo-sub-heading-font-size-resp: $typo-sub-heading-font-size !default;
+$typo-sub-heading-font-weight: $fw-regular !default;
+
+$typo-body-2-font: 				    $font-face !default;
 $typo-body-2-font-size: 			14px !default;
 $typo-body-2-font-size-resp: 	$typo-body-2-font-size !default;
 $typo-body-2-font-weight: 		$fw-regular !default;
@@ -78,15 +101,21 @@ $typo-body-1-font-size-resp: 	$typo-body-1-font-size !default;
 $typo-body-1-font-weight: 		$fw-regular !default;
 
 $typo-caption-font: 				  $font-base !default;
-$typo-caption-font-size: 			12px !default;
+$typo-caption-font-size: 			11px !default;
 $typo-caption-font-size-resp: $typo-caption-font-size !default;
 $typo-caption-font-weight: 		$fw-regular !default;
+
+$typo-tiny-font: 				      $font-base !default;
+$typo-tiny-font-size: 			  9px !default;
+$typo-tiny-font-size-resp:    $typo-tiny-font-size !default;
+$typo-tiny-font-weight: 		  $fw-regular !default;
 
 $typo-button-font: 				    $font-base !default;
 $typo-button-font-size: 			14px !default;
 $typo-button-font-size-resp: 	$typo-button-font-size !default;
 $typo-button-font-weight: 		$fw-medium !default;
 
+// Implementação dos typos
 $typo-variants: (
   "display-2": (
     font: $typo-display-2-font,
@@ -136,6 +165,12 @@ $typo-variants: (
     size-resp: $typo-caption-font-size-resp,
     weight: $typo-caption-font-weight
   ),
+  "tiny": (
+    font: $typo-tiny-font,
+    size: $typo-tiny-font-size,
+    size-resp: $typo-tiny-font-size-resp,
+    weight: $typo-tiny-font-weight
+  ),
   "button": (
     font: $typo-button-font,
     size: $typo-button-font-size,
@@ -144,22 +179,31 @@ $typo-variants: (
   ),
 ) !default;
 
+// Implementação dos typos de cores
 $typo-colors: (
-  "dark-text-primary": $typo-color-dark-text-primary,
-  "dark-text-secondary": $typo-color-dark-text-secondary,
-  "light-text-primary": $typo-color-light-text-primary,
-  "light-text-secondary": $typo-color-light-text-secondary
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "danger": $brand-danger,
+  "warning": $brand-warning,
+  "success": $brand-success,
+  "dark-primary": $typo-color-dark-text-primary,
+  "dark-secondary": $typo-color-dark-text-secondary,
+  "light-primary": $typo-color-light-text-primary,
+  "light-secondary": $typo-color-light-text-secondary
 ) !default;
 
+// Implementação dos typos de famílias de fontes
 $typo-face: (
   "formal": $font-base,
   "informal": $font-face,
 ) !default;
 
+// Implementação dos typos de estilos
 $typo-styles: (
   "italic": $fsty-italic,
 ) !default;
 
+// Implementação dos typos de peso de fontes
 $typo-weights: (
   thin: $fw-thin,
   light: $fw-light,
@@ -170,6 +214,7 @@ $typo-weights: (
   black: $fw-black
 ) !default;
 
+// Varivaeis globais
 $body-bg:       					    $white !default;
 $body-font-size:       			  1.6rem !default;
 
