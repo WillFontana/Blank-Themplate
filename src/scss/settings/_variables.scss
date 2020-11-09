@@ -274,43 +274,6 @@ $spacing-sides: (top, right, bottom, left) !default;
 
 $transition-base:             all .2s ease-in-out !default;
 
-$text-field-bg:               white !default;
-$text-field-height:           40px !default;
-$text-field-border-width:     $border-width !default;
-$text-field-border-color:     #ccc !default;
-$text-field-padding-x:        $gutter-sm !default;
-$text-field-font-size:        $typo-body-2-font-size !default;
-$text-field-font-size-resp:   $typo-body-2-font-size-resp !default;
-$text-field-font:             $typo-body-2-font !default;
-$text-field-font-weight:      $typo-body-2-font-weight !default;
-$text-field-font-color:       $typo-color-dark-text-primary !default;
+$base-height:                 40px !default;
 
-$text-field-focus-border-color: $primary-color !default;
-
-$alert-box-padding:           $gutter-md !default;
-$alert-box-font:              $typo-body-2-font !default;
-$alert-box-font-size:         $typo-body-2-font-size !default;
-$alert-box-font-size-resp:    $typo-body-2-font-size-resp !default;
-$alert-box-font-weight:       $typo-body-2-font-weight !default;
-$alert-box-line-height:       1.4 !default;
-$alert-box-variants: (
-  success: $brand-success,
-  error: $brand-danger,
-  info: $brand-info,
-  warning: $brand-warning
-) !default;
-
-$button-base-height:          40px !default;
-$button-base-pad-x:           $gutter-md !default;
-$button-base-bg:              $primary-color !default;
-$button-base-bg-hover:        $primary-color-darken !default;
-$button-base-color:           $primary-color-contrast !default;
-
-$button-base-out-b-width:     $border-width !default;
-$button-base-out-b-color:     $primary-color !default;
-$button-base-out-color:       $primary-color !default;
-$button-base-out-bg:          transparent !default;
-
-$input-switch-size:           map-get($icons-sizes, md) !default;
-$input-switch-fill:           $black-20 !default;
-$input-switch-checked-fill:   $primary-color !default;
+$font-size:                   11px;

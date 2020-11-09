@@ -1,0 +1,60 @@
+.warning-box {
+  @include size(100%, 60px);
+  @include center-flex-y;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 18;
+  background-color: rgba($ease-white, 0.9);
+  padding: 0 20px;
+  .warning-icon {
+    @include size(auto);
+    .svg-icon {
+      @include size(26px);
+      fill: $secondary-color;
+    }
+    + * {
+      margin-left: 10px;
+    }
+  }
+  .warning-container {
+    @include size(100%, auto);
+    .typo-caption {
+      margin-top: 2px;
+    }
+  }
+  &.-fading {
+    animation: fadeOutWarning 2s linear forwards;
+  }
+  &.-gone {
+    display: none;
+  }
+  @each $class, $color in $status-colors {
+    &.-#{$class} {
+      background-color: rgba($color, 0.9);
+    }
+  }
+  @include media-max(lg) {
+    .warning-container {
+      .typo-body-2 {
+        display: none;
+      }
+      .typo-caption {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@keyframes fadeOutWarning {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

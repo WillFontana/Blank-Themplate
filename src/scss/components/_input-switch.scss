@@ -1,61 +1,77 @@
-.input-switch {
+.check-box {
+  display: flex;
+  align-items: center;
+  position: relative;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
-  user-select: none;
-
-  > input {
+  padding-left: 25px;
+  .input-check {
     display: none;
   }
-
-  > .box {
-    @include size($input-switch-size);
-    @include icon;
-    position: relative;
+  .switch-svg {
+    .svg-icon {
+      position: absolute;
+      left: 0px;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      @include size(20px);
+      fill: $black-40;
+      &.-solid {
+        fill: $primary-color;
+        display: none;
+      }
+    }
+    + .text,
+    .typo-body-1 {
+      margin-left: 10px;
+    }
   }
-
-  > .box:before {
-    content: "";
-		background-color: rgba($primary-color, .5);
-		border-radius: 50%;
-		will-change: transform, opacity;
-		@include absolute-center;
+  .input-check:checked {
+    ~ .switch-svg {
+      .svg-icon {
+        &.-solid {
+          display: block;
+        }
+        &.-outline {
+          display: none;
+        }
+      }
+    }
+    ~ .text,
+    .typo-body-1 {
+      color: $primary-color;
+    }
   }
-
-  > .box > svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .input-check:disabled {
+    ~ .switch-svg {
+      .svg-icon {
+        fill: #d6d6d6;
+      }
+    }
+    ~ .text {
+      color: #ebebeb;
+    }
   }
-
-  > input:not(:checked) + .box > .solid,
-  > input:checked + .box > .outline,
-  > input:not(:checked) + .box:before {
-    visibility: hidden;
-    opacity: 0;
+  .text,
+  .typo-body-1,
+  p {
+    font-weight: 600;
+    color: $black-70;
+    font-family: $font-face;
+    font-size: $font-size + 2;
   }
-
-  > input:not(:checked) + .box > svg {
-    fill: $input-switch-fill;
+  &:hover {
+    border-color: $primary-color;
   }
-
-  > input:checked + .box > svg {
-    fill: $input-switch-checked-fill;
+  &.-error {
+    border: 2px solid $brand-danger;
+    .switch-svg {
+      .svg-icon {
+        fill: $brand-danger;
+      }
+    }
   }
-
-  > input:checked + .box:before {
-		animation: rippleSwitch 500ms cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
-	}
 }
-
-@keyframes rippleSwitch {
-	0% {
-		transform: scale(0);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(2);
-		opacity: 0;
-	}
+.input-check {
+  display: none;
 }

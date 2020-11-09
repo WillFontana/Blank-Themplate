@@ -1,0 +1,49 @@
+@mixin inputFont {
+  @include font($font-base, 15px, 15px, 500);
+  color: $black-80;
+}
+
+.text-box {
+  @include size(100%, $base-height);
+  position: relative;
+  .input {
+    @include size(100%);
+    @include radius;
+    @include transition(0.3s);
+    @include inputFont;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    box-shadow: inset 0 0 0 0 transparent;
+    &:focus,
+    &.-used,
+    &.-force-used,
+    &.-error {
+      ~ .label {
+        top: -20px;
+        left: 0;
+        .text {
+          font-size: 10px;
+        }
+      }
+    }
+    &.-error {
+      &:not(:focus) {
+        box-shadow: inset 0 0 10px 1px $brand-danger;
+      }
+    }
+  }
+
+  .label {
+    @include size(auto);
+    @include transition(0.3s);
+    position: absolute;
+    left: 15px;
+    top: $base-height / 3.6;
+    display: inline-flex;
+    .text {
+      @include transition;
+      @include inputFont;
+    }
+  }
+}
