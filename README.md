@@ -21,7 +21,7 @@ Nesse themplate temos um arquivo chamado _styles.scss_ que contem todos os inclu
 
 Qualquer alteração feita em nossos arquivos incluidos dentro do _styles.scss_ irá gerar uma nova versão de stylesheet contendo as novas alterações.
 
-[Mais informações sobre como utilizar o Sass aqui.](https://sass-lang.com "Sass: Syntactically Awesome Style Sheets"):
+[Mais informações sobre como utilizar o Sass aqui.](https://sass-lang.com "Sass: Syntactically Awesome Style Sheets")
 
 ### Icones
 
