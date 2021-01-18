@@ -8,7 +8,7 @@ No ambiente de desenvolvimento, não precisamos trabalhar com uma build otimizad
 Para iniciarmos o desenvolvimento da aplicação acessamos a pasta do projeto e instalamos as dependencias, em seguidas iniciamos o webpack para que assista as mudanças e atualize os arquivos.
 
 ```bash
-$ cd "webpack-sass" 
+$ cd "Blank-Themplate" 
 
 $ npm install && npm start
 ```
