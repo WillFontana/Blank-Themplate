@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "./node_modules/.bin/webpack --mode=production",
-    "dev": "./node_modules/.bin/webpack --mode=development --watch",
-    "server": "http-server -c-1 -p 8081"
+    "start": "./node_modules/.bin/webpack --mode=development --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
