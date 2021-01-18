@@ -9,12 +9,12 @@
   }
   .switch-svg {
     .svg-icon {
+      @include size(20px);
       position: absolute;
       left: 0px;
       bottom: 0;
       top: 0;
       margin: auto;
-      @include size(20px);
       fill: $black-40;
       &.-solid {
         fill: $primary-color;
