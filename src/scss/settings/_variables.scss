@@ -58,11 +58,11 @@ $fw-black: 							      900 !default;
 $fsty-italic:                 italic !default;
 
 // Definições de cores extras
-$typo-color-dark-text-primary: $black !default;
-$typo-color-dark-text-secondary: $black-60 !default;
+$dark-text-primary: $black !default;
+$dark-text-secondary: $black-60 !default;
 
-$typo-color-light-text-primary: $white !default;
-$typo-color-light-text-secondary: rgba($white, .7) !default;
+$light-text-primary: $white !default;
+$light-text-secondary: rgba($white, .7) !default;
 
 // Criação dos typos
 $typo-display-2-font: 				$font-base !default;
@@ -186,10 +186,10 @@ $typo-colors: (
   "danger": $brand-danger,
   "warning": $brand-warning,
   "success": $brand-success,
-  "dark-primary": $typo-color-dark-text-primary,
-  "dark-secondary": $typo-color-dark-text-secondary,
-  "light-primary": $typo-color-light-text-primary,
-  "light-secondary": $typo-color-light-text-secondary
+  "dark-primary": $dark-text-primary,
+  "dark-secondary": $dark-text-secondary,
+  "light-primary": $light-text-primary,
+  "light-secondary": $light-text-secondary
 ) !default;
 
 // Implementação dos typos de famílias de fontes

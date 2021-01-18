@@ -20,10 +20,11 @@
   }
 }
 
-@mixin font($family, $size, $resp-size, $weight) {
+@mixin font($family, $size, $resp-size, $weight, $color: #000000) {
+  @include fluid-type(map-get($breakpoints, md), map-get($breakpoints, xl), $resp-size, $size);
   font-family: $family;
   font-weight: $weight;
-  @include fluid-type(map-get($breakpoints, md), map-get($breakpoints, xl), $resp-size, $size);
+  color: $color;
 }
 
 @mixin size($width, $height: $width) {
@@ -198,7 +199,7 @@
   background-repeat: no-repeat;
 }
 
-@mixin customScroll($size, $radius, $scrollbar-color, $background-color) {
+@mixin custom-scroll($size, $radius, $scrollbar-color, $background-color) {
   &::-webkit-scrollbar {
     width: $size;
     height: $size;
