@@ -27,9 +27,30 @@
   color: $color;
 }
 
+@mixin preset-font($variant, $color: #000000) {
+  @if map-get($typo-variants, $variant) {
+    $obj: map-get($typo-variants, $variant);
+    @include font(
+      map-get($obj, "font"),
+      map-get($obj, "size"),
+      map-get($obj, "size-resp"),
+      map-get($obj, "weight"),
+      $color
+    );
+  }
+}
+
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
+}
+
+@mixin content-all {
+  @include center-block;
+  width: $content-all-width + ($content-all-pad-x * 2);
+  max-width: 100%;
+  padding-right: $content-all-pad-x;
+  padding-left: $content-all-pad-x;
 }
 
 @mixin media-min($breakpoint) {
@@ -91,6 +112,13 @@
   }
 }
 
+@mixin sides-radius($top-left: 0, $top-right: 0, $bottom-left: 0, $bottom-right: 0) {
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-left-radius: $bottom-left;
+  border-bottom-right-radius: $bottom-right;
+}
+
 @mixin ball($radius-size) {
   @include size($radius-size);
   @include radius($radius-size);
@@ -103,10 +131,11 @@
   margin-right: auto;
 }
 
-@mixin grid($qtd, $size, $gap) {
+@mixin grid($qtd, $size, $column-gap: 0, $row-gap: $column-gap) {
   display: grid;
   grid-template-columns: repeat($qtd, $size);
-  grid-gap: $gap;
+  grid-column-gap: $column-gap;
+  grid-row-gap: $row-gap;
 }
 
 @mixin reset-list {
@@ -199,7 +228,7 @@
   background-repeat: no-repeat;
 }
 
-@mixin custom-scroll($size, $radius, $scrollbar-color, $background-color) {
+@mixin custom-scroll($size: 0, $radius: 0, $scrollbar-color: transparent, $background-color: transparent) {
   &::-webkit-scrollbar {
     width: $size;
     height: $size;
@@ -227,5 +256,15 @@
 
   &::-webkit-scrollbar-corner {
     background-color: transparent;
+  }
+}
+
+@mixin primary-before {
+  position: relative;
+  &::before {
+    content: "";
+    @include size(100%);
+    @include absolute-center;
+    @include transition;
   }
 }
