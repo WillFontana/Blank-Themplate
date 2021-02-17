@@ -1,0 +1,17 @@
+.switch-check {
+  @include size(24px);
+  @include center-flex-y;
+  position: relative;
+  .svg-icon {
+    @include absolute-center;
+    @include transition;
+    @include size(24px);
+    fill: $dark-fill;
+    &.-uncheck {
+      opacity: 1;
+    }
+    &.-check {
+      opacity: 0;
+    }
+  }
+}
