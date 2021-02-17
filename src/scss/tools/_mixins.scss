@@ -163,7 +163,7 @@
   margin: auto;
 }
 
-@mixin absolute($top, $left, $bottom: $bottom, $right: $left) {
+@mixin absolute($top, $left, $bottom: $top, $right: $left) {
   position: absolute;
   top: $top;
   left: $left;
