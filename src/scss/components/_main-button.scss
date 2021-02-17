@@ -1,4 +1,4 @@
-.button-base {
+.main-button {
   @include font($typo-button-font, $typo-button-font-size, $typo-button-font-size-resp, $typo-button-font-weight);
   @include radius;
   @include transition;
